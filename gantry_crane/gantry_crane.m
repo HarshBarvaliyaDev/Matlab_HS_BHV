@@ -1,0 +1,11 @@
+mC = 8 * 1000;   % Mass of the cart (kg)
+mL = 25 * 1000;  % Mass of the load (kg)
+l = 8;           % Length of the rope (m)
+g = 9.81;        % Acceleration due to gravity (m/s^2)
+s = 20;          % Travel distance (m)
+max_torque = 200; % nm
+slop = 10;
+constant_tq_time = 80; % seconds
+startTime = max_torque/slop;
+finalTime = constant_tq_time + startTime;
+endTime = constant_tq_time + 2*startTime;
